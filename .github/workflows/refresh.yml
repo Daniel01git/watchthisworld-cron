@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Trigger news refresh
         run: |
-          curl -X POST https://watchthisworld-git-centralized-new-fc5074-daniel01gits-projects.vercel.app/api/cron/refresh \
+          curl -X POST https://watchthisworld.com/api/cron/refresh \
             -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
             -H "Content-Type: application/json" \
             --max-time 60 \
